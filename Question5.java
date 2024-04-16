@@ -27,15 +27,12 @@ public class Question5
      */
      
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number of inputs: ");
         int amount = in.nextInt();
 
         int[] array = new int[amount];
         for (int i = 0; i < amount; i++) {
-            System.out.println("Enter a number: ");
             array[i] = in.nextInt();
         }
-
         int maxCount = 0;
         int mode = 0;
 
@@ -51,7 +48,6 @@ public class Question5
                 mode = array[i];
             }
         }
-
-        System.out.println("Mode: " + mode);    
+        System.out.println(mode);
   }
 }
